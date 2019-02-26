@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+    overflow: hidden;
+    }
+       #id{
+           width:200px;
+           height:50px;
+           line-height: 50px;
+           text-align: center;
+       }
+       #show1,#show2{
+           width:500px;
+           height:50px;
+           line-height: 50px;
+           text-align: center;
+           font-size: 25px;
+       }
+    </style>
+</head>
+<body>
+    <div id="id">你好</div>
+    <div id="show1"></div>
+    <div id="show2"></div>
+    <script>
+        //showWithNoParam();
+        function showWithNoParam(){
+            document.getElementById('show1').innerText = 'android 调用JS 无参构造';
+        }
+
+        function showWithParams(s1,s2){
+            document.getElementById('show2').innerText = 'android 调用JS 无参构造 s1:'+s1+' s2:'+s2;
+            return 'Js返回的参数';
+        }
+    </script>
+</body>
+</html>
